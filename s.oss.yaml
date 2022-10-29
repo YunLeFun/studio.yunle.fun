@@ -15,7 +15,7 @@ services:
           path: ./code
     props:
       bucket: auto
-      codeUri: ./code/dist
+      codeUri: ./code/.output/public
       region: ${vars.region}
       website:
         index: index.html
