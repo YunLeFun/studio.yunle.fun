@@ -1,0 +1,46 @@
+edition: 1.0.0
+name: YunLeFun
+
+# 密钥
+access: "yunlefun"
+
+# 全局变量
+vars:
+  region: "cn-shanghai"
+
+services:
+  start-vue3: # 业务名称/模块名称
+    component: fc # 组件名称
+    actions:
+      pre-deploy:
+        - run: pnpm install
+          path: .
+        - run: pnpm generate
+          path: .
+        - plugin: website-fc
+    props: # 组件的属性值
+      region: ${vars.region}
+      service:
+        name: "yunlefun-service"
+        description: "Serverless Devs Website Service"
+      function:
+        name: "yunlefun-home"
+        description: "YunLeFun Home with Nuxt3"
+        codeUri: ./dist
+        timeout: 30
+        memorySize: 512
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
