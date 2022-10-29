@@ -25,7 +25,7 @@ services:
       region: ${vars.region}
       service:
         name: "yunlefun-service"
-        description: "Serverless Devs Website Service"
+        description: "YunLeFun Service"
       function:
         name: "yunlefun-home"
         description: "YunLeFun Home with Nuxt3"
@@ -37,8 +37,8 @@ services:
         # memorySize: 512
         customRuntimeConfig:
           command:
-            - npx
-            - nuxt
+            - npm
+            - run
             - start
       triggers:
         - name: httpTrigger
