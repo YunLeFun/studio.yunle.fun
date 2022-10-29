@@ -37,7 +37,8 @@ services:
         # memorySize: 512
         customRuntimeConfig:
           command:
-            - npm
+            - npx
+            - nuxt
             - start
       triggers:
         - name: httpTrigger
