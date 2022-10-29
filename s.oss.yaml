@@ -5,17 +5,17 @@ vars: # 全局变量
   region: "{{ region }}"
 
 services:
-  start-vue3:
+  yunlefun:
     component: oss
     actions:
       pre-deploy:
-        - run: pnpm install
+        - run: npx pnpm install
           path: .
-        - run: pnpm generate
+        - run: npm run generate
           path: .
     props:
       bucket: auto
-      codeUri: ./code/dist
+      codeUri: ./dist
       region: ${vars.region}
       website:
         index: index.html

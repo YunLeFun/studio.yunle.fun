@@ -9,13 +9,13 @@ vars:
   region: "cn-shanghai"
 
 services:
-  start-vue3: # 业务名称/模块名称
+  yunlefun: # 业务名称/模块名称
     component: fc # 组件名称
     actions:
       pre-deploy:
-        - run: pnpm install
+        - run: npx pnpm install
           path: .
-        - run: pnpm generate
+        - run: npm run generate
           path: .
         - plugin: website-fc
     props: # 组件的属性值
