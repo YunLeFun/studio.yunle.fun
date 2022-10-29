@@ -10,12 +10,12 @@ services:
     actions:
       pre-deploy:
         - run: npx pnpm install
-          path: .
+          path: ./code
         - run: npm run generate
-          path: .
+          path: ./code
     props:
       bucket: auto
-      codeUri: ./dist
+      codeUri: ./code/dist
       region: ${vars.region}
       website:
         index: index.html

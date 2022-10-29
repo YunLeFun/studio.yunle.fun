@@ -14,9 +14,9 @@ services:
     actions:
       pre-deploy:
         - run: npx pnpm install
-          path: .
+          path: ./code
         - run: npm run generate
-          path: .
+          path: ./code
         - plugin: website-fc
     props: # 组件的属性值
       region: ${vars.region}
@@ -26,7 +26,7 @@ services:
       function:
         name: "yunlefun-home"
         description: "YunLeFun Home with Nuxt3"
-        codeUri: ./dist
+        codeUri: ./code/dist
         timeout: 30
         memorySize: 512
       triggers:
