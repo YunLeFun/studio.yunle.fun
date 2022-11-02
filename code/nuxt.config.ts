@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  title: '云乐坊 | YunLeFun',
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',

@@ -6,14 +6,7 @@ definePageMeta({
 
 <template>
   <div>
-    <Logos mb-6 />
-    <Suspense>
-      <PageView />
-      <template #fallback>
-        <div op50 italic>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
+    <!-- 初次见面，请多指教 -->
+    <!-- <canvas /> -->
   </div>
 </template>

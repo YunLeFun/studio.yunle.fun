@@ -3,20 +3,27 @@ const icp = '京ICP备2022027075号-1'
 </script>
 
 <template>
-  <div
+  <footer
+    class="footer"
+    bg-black
     text="xl gray4"
-    m-5
+    p-8
     flex
-    justify-center
-    gap-3
+    flex-col
+    justify-start
+    items-start
+    fixed
+    bottom-0
+    left-0
+    right-0
   >
-    <a i-ri-github-line href="https://github.com/YunLeFun" title="YunLeFun" target="_blank" />
-    <a i-ri-bilibili-line href="https://space.bilibili.com/165596026" title="云乐坊工作室" target="_blank" />
-    <a i-ri-wechat-line href="/images/yunlefun-wechat.jpg" title="云乐坊工作室" target="_blank" />
-  </div>
-  <div class="mt-5 mx-auto text-center opacity-60 text-sm">
-    <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
-      {{ icp }}
-    </a>
-  </div>
+    <SocialIcons />
+
+    <div class="mt-5 text-center opacity-90 text-lg" text-white font-black>
+      <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
+        {{ icp }}
+      </a>
+    </div>
+  </footer>
+
 </template>

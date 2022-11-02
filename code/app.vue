@@ -1,9 +1,11 @@
-<script setup>
+<script lang="ts" setup>
+const appConfig = useAppConfig()
+
 useHead({
-  title: 'Vitesse Nuxt 3',
+  title: appConfig.title,
   link: [
     {
-      rel: 'icon', type: 'image/png', href: '/nuxt.png',
+      rel: 'icon', type: 'image/png', href: 'https://www.yunyoujun.cn/favicon.svg',
     },
   ],
 })
@@ -16,6 +18,14 @@ useHead({
 </template>
 
 <style>
+:root {
+  --ylf-c-bg: white;
+}
+
+html.dark {
+  --ylf-c-bg: black;
+}
+
 html, body , #__nuxt{
   height: 100vh;
   margin: 0;
@@ -23,7 +33,7 @@ html, body , #__nuxt{
 }
 
 html.dark {
-  background: #222;
+  background: var(--ylf-c-bg);
   color: white;
 }
 </style>
