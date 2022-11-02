@@ -30,11 +30,11 @@ services:
         name: "yunlefun-home"
         description: "YunLeFun Home with Nuxt3"
         codeUri: ./code
-        runtime: custom
+        runtime: nodejs14
         timeout: 60
         # default port is 3000
         caPort: 3000
-        # memorySize: 512
+        memorySize: 128
         customRuntimeConfig:
           command:
             - npm
