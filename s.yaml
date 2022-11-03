@@ -29,7 +29,6 @@ services:
       function:
         name: "yunlefun-home"
         description: "YunLeFun Home with Nuxt3"
-        codeUri: ./code
         runtime: custom
         timeout: 60
         # default port is 3000
