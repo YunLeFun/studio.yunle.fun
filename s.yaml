@@ -31,6 +31,7 @@ services:
         description: "YunLeFun Home with Nuxt3"
         runtime: custom
         timeout: 60
+        codeUri: ''
         # default port is 3000
         caPort: 3000
         memorySize: 128
@@ -39,8 +40,11 @@ services:
             - npm
             - run
             - start
-          args:
-            - ''
+        layers:
+          - acs:fc:{region}:official:layers/Nodejs16/versions/1
+        environmentVariables:
+          PATH: >-
+            /opt/nodejs16/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin
       triggers:
         - name: httpTrigger
           type: http
