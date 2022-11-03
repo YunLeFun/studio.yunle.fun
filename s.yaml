@@ -20,7 +20,7 @@ services:
         # for generate static
         # - run: npm run generate
         #   path: ./code
-        - plugin: website-fc
+        # - plugin: website-fc
     props: # 组件的属性值
       region: ${vars.region}
       service:
@@ -31,7 +31,7 @@ services:
         description: "YunLeFun Home with Nuxt3"
         runtime: custom
         timeout: 60
-        codeUri: ''
+        codeUri: './code'
         # default port is 3000
         caPort: 3000
         memorySize: 128
