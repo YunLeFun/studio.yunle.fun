@@ -32,7 +32,7 @@ services:
         codeUri: ./code
         runtime: custom
         layers:
-          - nodejs14
+          - Nodejs16
         timeout: 60
         # default port is 3000
         caPort: 3000
