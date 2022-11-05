@@ -18,14 +18,6 @@ useHead({
 </template>
 
 <style>
-:root {
-  --ylf-c-bg: white;
-}
-
-html.dark {
-  --ylf-c-bg: black;
-}
-
 html, body , #__nuxt{
   height: 100vh;
   margin: 0;

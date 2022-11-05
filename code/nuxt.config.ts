@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   title: '云乐坊 | YunLeFun',
   modules: [
+    '@nuxt/content',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
@@ -15,4 +16,13 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/styles/index.scss" as *;'
+        }
+      }
+    }
+  }
 })

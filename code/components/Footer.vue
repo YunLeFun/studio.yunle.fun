@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { socialList } from '~/config';
+
 const icp = '京ICP备2022027075号-1'
 </script>
 
@@ -13,7 +15,7 @@ const icp = '京ICP备2022027075号-1'
     justify-start
     items-start
   >
-    <SocialIcons />
+    <SocialIcons text="white" :socialList="socialList" />
 
     <div class="mt-5 text-center opacity-90 text-lg" text-white font-black>
       <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">

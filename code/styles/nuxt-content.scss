@@ -1,0 +1,15 @@
+.nuxt-content {
+  a {
+    text-decoration: dashed;
+    color: gray;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  ul {
+    list-style: circle;
+    padding-left: 1rem;
+  }
+}

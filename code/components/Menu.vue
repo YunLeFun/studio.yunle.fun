@@ -1,16 +1,16 @@
 <script setup lang="ts">
 const navItems = [
-  { name: '关于我们', path: '/about' },
+  { name: '业务介绍', path: '/intro' },
   { name: '作品展示', path: '/gallery' },
-  { name: '主要成员', path: '/members' },
+  { name: '团队成员', path: '/about/team' },
   { name: '联系我们', path: '/contact' },
 ]
 </script>
 
 <template>
-  <div id="menu" p-8 text-left>
+  <div id="menu" p-4 text-left>
     <Banner />
-    <div mt-6 flex flex-col>
+    <div flex flex-col>
       <li
         v-for="nav in navItems"
         :key="nav.path"
@@ -38,9 +38,10 @@ const navItems = [
     padding-left: 8px;
     margin-left: -16px;
 
-    &:hover {
+    &:hover,
+    &.active{
       font-weight: bold;
-      border-left: 8px solid black;
+      border-left: 8px solid var(--ylf-c-border);
     }
   }
 }
