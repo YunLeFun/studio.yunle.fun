@@ -6,7 +6,6 @@ definePageMeta({
 
 <template>
   <div>
-    <!-- 初次见面，请多指教 -->
     <!-- <canvas /> -->
   </div>
 </template>

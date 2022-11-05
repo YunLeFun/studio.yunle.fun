@@ -3,7 +3,7 @@ const router = useRouter()
 </script>
 
 <template>
-  <main p="x4 y10" text="center teal-700 dark:gray-200">
+  <!-- <main p="x4 y10" text="center teal-700 dark:gray-200">
     <div text-4xl>
       <div i-carbon-warning inline-block />
     </div>
@@ -13,5 +13,8 @@ const router = useRouter()
         Back
       </button>
     </div>
+  </main> -->
+  <main class="nuxt-content">
+    <ContentDoc />
   </main>
 </template>
