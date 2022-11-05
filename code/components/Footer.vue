@@ -12,10 +12,6 @@ const icp = '京ICP备2022027075号-1'
     flex-col
     justify-start
     items-start
-    fixed
-    bottom-0
-    left-0
-    right-0
   >
     <SocialIcons />
 
@@ -25,5 +21,4 @@ const icp = '京ICP备2022027075号-1'
       </a>
     </div>
   </footer>
-
 </template>

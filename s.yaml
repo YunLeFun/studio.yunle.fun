@@ -2,11 +2,11 @@ edition: 1.0.0
 name: YunLeFun
 
 # 密钥
-access: "yunlefun"
+access: yunlefun
 
 # 全局变量
 vars:
-  region: "cn-hangzhou"
+  region: cn-hangzhou
 
 services:
   yunlefun: # 业务名称/模块名称
@@ -24,14 +24,14 @@ services:
     props: # 组件的属性值
       region: ${vars.region}
       service:
-        name: "yunlefun-service"
-        description: "YunLeFun Service"
+        name: yunlefun-service
+        description: YunLeFun Service
       function:
-        name: "yunlefun-home"
-        description: "YunLeFun Home with Nuxt3"
+        name: yunlefun-home
+        description: YunLeFun Home with Nuxt3
         runtime: custom
         timeout: 60
-        codeUri: './code'
+        codeUri: ./code
         # default port is 3000
         caPort: 3000
         memorySize: 128

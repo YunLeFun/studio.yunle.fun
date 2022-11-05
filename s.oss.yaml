@@ -1,8 +1,8 @@
 edition: 1.0.0
-access: "{{ access }}"
+access: '{{ access }}'
 
 vars: # 全局变量
-  region: "{{ region }}"
+  region: '{{ region }}'
 
 services:
   yunlefun:

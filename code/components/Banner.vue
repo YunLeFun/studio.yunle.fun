@@ -5,7 +5,9 @@
     <ruby>坊<rp>(</rp><rt>Fun</rt><rp>)</rp></ruby>
     <span text-2xl>工作室</span>
   </h1>
-  <h2 class="subtitle" opacity="50" mt-4 text-xl>希望创作有趣事物的小小工作坊</h2>
+  <h2 class="subtitle" opacity="50" mt-4 text-xl>
+    希望创作有趣事物的小小工作坊
+  </h2>
 </template>
 
 <style lang="scss" scoped>
