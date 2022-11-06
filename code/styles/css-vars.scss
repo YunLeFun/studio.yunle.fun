@@ -1,11 +1,11 @@
 :root {
-  --ylf-c-bg: white;
-
-  --ylf-c-border: black;
+  --c-bg: white;
+  --c-text: black;
+  --c-border: black;
 }
 
 html.dark {
-  --ylf-c-bg: black;
-
-  --ylf-c-border: white;
+  --c-bg: black;
+  --c-text: white;
+  --c-border: white;
 }

@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="project.url" target="_blank" class="bg-left-to-right border-4px border-$ylf-c-border" flex flex-col justify="center" p-4 hover="text-white" cursor="pointer">
+  <a :href="project.url" target="_blank" class="bg-left-to-right border-4px border-c-border" flex flex-col justify="center" p-4 hover="text-c-bg" cursor="pointer">
     <div m-auto text-2xl mb-2 inline-flex :class="project.icon" />
     <h3
       flex justify="center" items-center

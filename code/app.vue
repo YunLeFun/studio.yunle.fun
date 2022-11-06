@@ -28,13 +28,13 @@ useHead({
 
 <style>
 html, body , #__nuxt{
+  background: var(--c-bg);
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 html.dark {
-  background: var(--ylf-c-bg);
   color: white;
 }
 </style>

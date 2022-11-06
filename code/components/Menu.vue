@@ -14,7 +14,7 @@ const navItems = [
       <li
         v-for="nav in navItems"
         :key="nav.path"
-        class="ylf-menu-item inline-flex text-5xl my-6 py-2 tracking-widest transition"
+        class="ylf-menu-item inline-flex text-5xl my-4 py-2 tracking-widest transition"
       >
         <RouterLink active-class="active" :to="nav.path">
           {{ nav.name }}
@@ -41,7 +41,7 @@ const navItems = [
     &:hover,
     &.active{
       font-weight: bold;
-      border-left: 8px solid var(--ylf-c-border);
+      border-left: 8px solid var(--c-border);
     }
   }
 }
