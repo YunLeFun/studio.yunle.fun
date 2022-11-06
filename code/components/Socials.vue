@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Socials } from '~/types';
+import type { Socials } from '~/types'
 
 defineProps<{
   socials: Socials
@@ -8,13 +8,16 @@ defineProps<{
 
 <template>
   <div flex gap-5 justify="center">
-    <a v-if="socials.github" :href="'https://github.com/' + socials.github" title="GitHub" target="_blank">
+    <a v-if="socials.blog" :href="socials.blog" title="个人网站" target="_blank">
+      <div i-ri-global-fill />
+    </a>
+    <a v-if="socials.github" :href="`https://github.com/${socials.github}`" title="GitHub" target="_blank">
       <div i-ri-github-fill />
     </a>
-    <a v-if="socials.bilibili" :href="'https://space.bilibili.com/' + socials.bilibili" title="哔哩哔哩" target="_blank">
+    <a v-if="socials.bilibili" :href="`https://space.bilibili.com/${socials.bilibili}`" title="哔哩哔哩" target="_blank">
       <div i-ri-bilibili-fill />
     </a>
-    <a v-if="socials.github" :href="'https://weibo.com/' + socials.weibo" title="微博" target="_blank">
+    <a v-if="socials.weibo" :href="`https://weibo.com/${socials.weibo}`" title="微博" target="_blank">
       <div i-ri-weibo-fill />
     </a>
     <a v-if="socials.wechat" :href="socials.wechat" title="微信公众号" target="_blank">

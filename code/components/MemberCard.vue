@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Member } from "~/types";
+import type { Member } from '~/types'
 defineProps<{
   member: Member
 }>()
@@ -10,9 +10,14 @@ defineProps<{
     <h3>
       {{ member.name }}
     </h3>
-    <sub text="lg" opacity="80">
-      {{ member.title }}
-    </sub>
+    <div flex justify="center" items-center m-2>
+      <span class="border-$ylf-c-border border-2px" py-1 px-2 rounded text="xs" opacity="80">
+        {{ member.title }}
+      </span>
+    </div>
+    <p text="base" opacity="70">
+      {{ member.desc }}
+    </p>
     <div mt-4>
       <Socials :socials="member.socials" />
     </div>

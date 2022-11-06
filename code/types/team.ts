@@ -4,6 +4,7 @@ export interface Link {
 }
 
 export interface Socials {
+  blog?: string
   github: string
   bilibili?: string
   weibo?: string
@@ -12,7 +13,12 @@ export interface Socials {
 }
 
 export interface Member {
+  /**
+   * 代表色
+   */
+  color?: string
   name: string
+  desc: string
   avatarPic?: string
   title: string
   projects: Link[]

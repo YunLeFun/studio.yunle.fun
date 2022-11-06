@@ -1,0 +1,11 @@
+// hover bg transition from left to right
+.bg-left-to-right {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    background-position: left bottom;
+  }
+}
