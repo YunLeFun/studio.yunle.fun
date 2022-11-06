@@ -21,9 +21,9 @@ import { intro } from '~/config'
       <span text-green-600>趣</span>
       <span text-red-600>多</span>
       <span text-orange-600>彩</span>。
-      <RouterLink class="underline" to="/contact">
+      <NuxtLink class="underline" to="/contact">
         联系我们
-      </RouterLink>
+      </NuxtLink>
     </div>
   </div>
 </template>

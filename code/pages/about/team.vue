@@ -7,5 +7,9 @@ import { members } from '~/config'
     <div grid grid-cols-1 md:grid-cols-3 gap-4>
       <MemberCard v-for="member in members" :key="member.name" :member="member" />
     </div>
+
+    <div text-5xl my-4>
+      施工中...
+    </div>
   </div>
 </template>

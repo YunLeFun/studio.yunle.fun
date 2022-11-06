@@ -16,9 +16,9 @@ const navItems = [
         :key="nav.path"
         class="ylf-menu-item inline-flex text-5xl my-4 py-2 tracking-widest transition"
       >
-        <RouterLink active-class="active" :to="nav.path">
+        <NuxtLink active-class="active" :to="nav.path">
           {{ nav.name }}
-        </RouterLink>
+        </NuxtLink>
       </li>
     </div>
   </div>

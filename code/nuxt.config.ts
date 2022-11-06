@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
-  title: '云乐坊 | YunLeFun',
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
   modules: [
     '@nuxt/content',
     '@vueuse/nuxt',
@@ -20,9 +22,9 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/styles/index.scss" as *;'
-        }
-      }
-    }
-  }
+          additionalData: '@use "@/styles/index.scss" as *;',
+        },
+      },
+    },
+  },
 })

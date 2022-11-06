@@ -1,5 +1,16 @@
 @use './glitch.scss';
 
+// page transition
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
 // hover bg transition from left to right
 .bg-left-to-right {
   background: linear-gradient(to right, var(--c-text) 50%, var(--c-bg) 50%);

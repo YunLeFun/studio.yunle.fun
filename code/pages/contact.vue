@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { socialList } from '~/config'
+import { confirmFormUrl, socialList } from '~/config'
 
 const clientGroupImgUrl = '/images/yunlefun-wechat-client-group.jpg'
 </script>
@@ -13,6 +13,9 @@ const clientGroupImgUrl = '/images/yunlefun-wechat-client-group.jpg'
       <p>
         联系邮箱：bd@yunle.fun
       </p>
+      <div mt-1>
+        <a class="border-b-$c-border border-b-1 border-b-dashed" :href="confirmFormUrl" target="_blank">合作确认事项</a>
+      </div>
 
       <hr my-2>
 
