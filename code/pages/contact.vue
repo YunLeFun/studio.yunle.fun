@@ -21,7 +21,7 @@ const clientGroupImgUrl = '/images/yunlefun-wechat-client-group.jpg'
 
       <div flex flex-col>
         <img border m-auto max-w-200px :src="clientGroupImgUrl" alt="云乐坊客户群">
-        <span text="xs" opacity="70">
+        <span mt-1 text="xs" opacity="70">
           云乐坊客户群
         </span>
       </div>
