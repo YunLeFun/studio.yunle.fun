@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { SocialItem, Socials } from "~/types";
+import type { SocialItem } from '~/types'
 
 defineProps<{
   socialList: SocialItem[]
