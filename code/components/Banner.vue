@@ -9,7 +9,7 @@
       </h1>
     </NuxtLink>
     <h2 class="subtitle border-l-c-border" opacity="50" mt-4 text-xl pl-2 border-l-4>
-      <span>让世界更</span>
+      <span>让世界更加</span>
       <span>有</span>
       <span>趣</span>
       <span>多</span>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const navItems = [
-  { name: '业务介绍', path: '/intro' },
+  { name: '关于这里', path: '/intro' },
   { name: '作品展示', path: '/gallery' },
-  { name: '团队成员', path: '/about/team' },
+  { name: '合作伙伴', path: '/partners' },
   { name: '联系我们', path: '/contact' },
 ]
 </script>

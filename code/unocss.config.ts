@@ -7,10 +7,10 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import { socialList } from './config'
+import { projects, socialList } from './config'
 
 const socialIcons = socialList.map(item => item.icon)
-const safelist: string[] = socialIcons
+const safelist: string[] = socialIcons.concat(projects.map(p => p.icon))
 
 export default defineConfig({
   safelist,

@@ -3,7 +3,7 @@ import type { Member } from '~/types'
 export const members: Member[] = [
   {
     name: '云游君',
-    title: 'Creator',
+    title: 'Founder',
     desc: '开源爱好者',
     projects: [],
     location: 'China',
@@ -20,16 +20,6 @@ export const members: Member[] = [
     },
     sponsor: {
       url: 'https://sponsors.yunyoujun.cn',
-    },
-  },
-  {
-    name: '忠忠',
-    title: 'Designer',
-    desc: 'Element Plus 设计师',
-    projects: [],
-    location: 'China',
-    socials: {
-      github: 'huangzhongzhong',
     },
   },
 ]
