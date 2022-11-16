@@ -5,14 +5,15 @@ import { confirmFormUrl, groups, members, socialList } from '~/config'
 <template>
   <div>
     <div border="$c-text" border-8px max-w-600px shadow m-auto p-2>
-      <h3 font="bold" mb-2>
+      <h3 text="lg" font="serif black" mb-2>
         商务合作
       </h3>
-      <p>
-        联系邮箱：bd@yunle.fun
-      </p>
-      <div mt-1>
-        <a class="border-b-$c-border border-b-1 border-b-dashed" :href="confirmFormUrl" target="_blank">合作确认事项</a>
+      <div m-auto>
+        联系邮箱（商务合作）：bd@yunle.fun<br>
+        联系邮箱（其他）：i@yunle.fun
+      </div>
+      <div mt-2>
+        <a class="border-b-$c-border border-b-1 border-b-dashed" opacity="60" :href="confirmFormUrl" target="_blank">合作确认事项</a>
       </div>
 
       <hr my-2>
@@ -26,9 +27,6 @@ import { confirmFormUrl, groups, members, socialList } from '~/config'
 
       <hr my-2>
 
-      <h5 mb-2>
-        更多工作室动态
-      </h5>
       <div bg-black p-4 inline-flex text-2xl>
         <SocialIcons text="white" :social-list="socialList" />
       </div>
@@ -36,14 +34,14 @@ import { confirmFormUrl, groups, members, socialList } from '~/config'
       <hr my-2>
 
       <details>
-        <summary>
-          <span font="bold" my-2>
+        <summary cursor="pointer">
+          <span text="lg" font="serif black" my-2>
             微信交流群
           </span>
         </summary>
         <ul class="list-circle" text="left" pl-6>
           <li v-for="group in groups" :key="group.name">
-            <a class="text-blue-600 border-b-1" :href="group.url" target="_blank">
+            <a class="text-blue-600 border-b-1 dark:text-blue-300" :href="group.url" font="serif black" target="_blank">
               {{ group.name }}
             </a>
             ：<span text-sm>{{ group.desc }}</span>

@@ -3,8 +3,8 @@ import type { SocialItem } from '~/types'
 export const socialList: SocialItem[] = [
   {
     icon: 'i-ri-mail-fill',
-    title: 'bd@yunle.fun｜商务合作',
-    link: 'mailto:bd@yunle.fun',
+    title: 'i@yunle.fun',
+    link: 'mailto:i@yunle.fun',
   },
   {
     icon: 'i-ri-github-fill',

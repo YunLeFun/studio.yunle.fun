@@ -31,8 +31,10 @@ useHead({
 html, body , #__nuxt{
   color: var(--c-text);
   background: var(--c-bg);
-  height: 100vh;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
+
+  transition: background 0.8s;
 }
 </style>

@@ -5,7 +5,7 @@ import { intro } from '~/config'
 <template>
   <div text-left>
     <div text="xl" class="border-l-8px border-l-$c-border" pl-3>
-      <b>云乐坊工作室</b> 是一个希望创作有趣事物的小小工作坊。
+      <b font="serif black">云乐坊工作室</b> 是一个希望创作有趣/有用/有回响之物的小小工作坊。
       <br>
       目前专注互联网应用、营销及游戏领域的 Web 开发，致力于为客户提供快速且<b>优质</b>的 H5 应用及创意实现过程。
 

@@ -11,6 +11,7 @@ defineProps<{
     <div m-auto text-2xl mb-2 inline-flex :class="project.icon" />
     <h3
       flex justify="center" items-center
+      font="serif black"
       :href="project.url" :title="project.name" target="_blank"
     >
       <span>{{ project.name }}</span>

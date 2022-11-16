@@ -14,6 +14,7 @@
 // hover bg transition from left to right
 .bg-left-to-right {
   background: linear-gradient(to right, var(--c-text) 50%, var(--c-bg) 50%);
+  background-blend-mode: difference;
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .4s ease-in-out;
