@@ -9,7 +9,7 @@ import {
 } from 'unocss'
 import { projects, socialList } from './config'
 
-const socialIcons = socialList.map(item => item.icon)
+const socialIcons = socialList.map(item => item.icon).filter(i => i.startsWith('i-'))
 const safelist: string[] = socialIcons.concat(projects.map(p => p.icon))
 
 export default defineConfig({

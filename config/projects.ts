@@ -30,4 +30,17 @@ export const projects: Project[] = [
     url: 'https://app.yunle.fun/single-day-strategy/',
     github: 'YunLeFun/single-day-strategy',
   },
+  {
+    name: '测一测你的老板是什么类型',
+    desc: 'B站联合复旦大学管理学院设计｜领导风格测试工具',
+    icon: 'https://app.yunle.fun/bilibili-boss-quiz/logo.jpg',
+    url: 'https://www.bilibili.com/blackboard/activity-TxFVVESPn1.html',
+  },
+  {
+    name: '我的塞尔达本命武器',
+    desc: '用 AI 创造武器',
+    icon: 'i-ri-robot-line',
+    // icon: 'https://app.yunle.fun/bilibili-boss-quiz/logo.jpg',
+    url: 'https://zelda-weapons.yunle.fun',
+  },
 ]
