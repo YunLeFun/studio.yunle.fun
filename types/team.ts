@@ -24,7 +24,11 @@ export interface Member {
   projects: Link[]
   location: string
   website?: Link
-  socials: Socials
+  socials: Socials | Record<string, {
+    icon: string
+    title: string
+    link: string
+  }>
   sponsor?: {
     url: string
   }

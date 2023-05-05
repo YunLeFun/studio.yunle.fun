@@ -23,8 +23,8 @@ const icp = '京ICP备2022027075号-1'
       </a>
     </div>
 
-    <div mt-2 text-base>
-      由 <a href="https://www.netdun.net/" class="text-gray-300" target="_blank">网盾星球</a> 提供 CDN 支持
-    </div>
+    <a mt-2 text-base href="mailto:i@yunle.fun" target="_blank">
+      广告位招租~
+    </a>
   </footer>
 </template>

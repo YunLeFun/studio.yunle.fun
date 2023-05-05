@@ -12,6 +12,11 @@ export const socialList: SocialItem[] = [
     link: 'https://github.com/YunLeFun',
   },
   {
+    icon: 'i-ri-qq-fill',
+    title: 'QQ频道 云乐坊',
+    link: 'https://pd.qq.com/s/grfe9jxoe',
+  },
+  {
     icon: 'i-ri-wechat-fill',
     title: '云乐坊工作室｜微信公众号',
     link: '/images/yunlefun-wechat.jpg',

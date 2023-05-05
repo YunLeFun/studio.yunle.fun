@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { Member } from '~/types'
+
 defineProps<{
   member: Member
 }>()

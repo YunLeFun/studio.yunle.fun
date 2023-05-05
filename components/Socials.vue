@@ -23,5 +23,8 @@ defineProps<{
     <a v-if="socials.wechat" :href="socials.wechat" title="微信公众号" target="_blank">
       <div i-ri-wechat-fill />
     </a>
+    <a v-if="socials.qq" :href="socials.qq.link" :title="socials.qq.title" target="_blank">
+      <div i-ri-qq-fill />
+    </a>
   </div>
 </template>
