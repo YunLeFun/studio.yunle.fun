@@ -3,13 +3,10 @@ export interface Link {
   url: string
 }
 
-export interface Socials {
-  blog?: string
-  github: string
-  bilibili?: string
-  weibo?: string
-  twitter?: string
-  wechat?: string
+export interface SocialItem {
+  icon: string
+  title: string
+  link: string
 }
 
 export interface Member {
@@ -24,11 +21,7 @@ export interface Member {
   projects: Link[]
   location: string
   website?: Link
-  socials: Socials | Record<string, {
-    icon: string
-    title: string
-    link: string
-  }>
+  socials: SocialItem[]
   sponsor?: {
     url: string
   }

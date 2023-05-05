@@ -7,10 +7,13 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import { projects, socialList } from './config'
+import { members, projects, socialList } from './config'
 
+const projectIcon = projects.map(p => p.icon).filter(i => i.startsWith('i-'))
 const socialIcons = socialList.map(item => item.icon).filter(i => i.startsWith('i-'))
-const safelist: string[] = socialIcons.concat(projects.map(p => p.icon))
+const memberIcons = members.map(member => member.socials.map(item => item.icon)).flat().filter(i => i.startsWith('i-'))
+
+const safelist: string[] = Array.from(new Set(projectIcon.concat(socialIcons, memberIcons)))
 
 export default defineConfig({
   safelist,
