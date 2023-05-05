@@ -14,6 +14,8 @@ export default defineNuxtConfig({
     'nuxt-gtag',
   ],
 
+  plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
+
   gtag: {
     id: 'G-J37CFPQKF4',
   },

@@ -28,6 +28,9 @@ devDependencies:
   '@unocss/nuxt':
     specifier: ^0.51.8
     version: 0.51.8(postcss@8.4.23)(vite@4.3.4)(webpack@5.82.0)
+  '@vercel/analytics':
+    specifier: ^1.0.1
+    version: 1.0.1
   '@vueuse/nuxt':
     specifier: ^10.1.2
     version: 10.1.2(nuxt@3.4.3)(vue@3.2.47)
@@ -1772,6 +1775,10 @@ packages:
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - rollup
+    dev: true
+
+  /@vercel/analytics@1.0.1:
+    resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
     dev: true
 
   /@vercel/nft@0.22.6:
