@@ -37,6 +37,9 @@ devDependencies:
   nuxt:
     specifier: ^3.4.3
     version: 3.4.3(@types/node@20.0.0)(eslint@8.39.0)(sass@1.62.1)(typescript@5.0.4)(vue-tsc@1.6.4)
+  nuxt-gtag:
+    specifier: ^0.5.7
+    version: 0.5.7
   pinia:
     specifier: ^2.0.35
     version: 2.0.35(typescript@5.0.4)(vue@3.2.47)
@@ -5922,6 +5925,17 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-gtag@0.5.7:
+    resolution: {integrity: sha512-Q6NRndEJ0phEfKdS4uLy3hpVBkgWGnG5KJ2dhVyCmbLXcfakkmf19f2WJ5uM2yUOg8rAkYgDjRb9XyAfE+okuA==}
+    dependencies:
+      '@nuxt/kit': 3.4.3
+      defu: 6.1.2
+      pathe: 1.1.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt@3.4.3(@types/node@20.0.0)(eslint@8.39.0)(sass@1.62.1)(typescript@5.0.4)(vue-tsc@1.6.4):

@@ -9,7 +9,15 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
+
+    // https://nuxt.com/modules/gtag
+    'nuxt-gtag',
   ],
+
+  gtag: {
+    id: 'G-J37CFPQKF4',
+  },
+
   experimental: {
     reactivityTransform: true,
   },

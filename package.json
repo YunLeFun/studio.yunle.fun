@@ -23,6 +23,7 @@
     "@vueuse/nuxt": "^10.1.2",
     "eslint": "^8.39.0",
     "nuxt": "^3.4.3",
+    "nuxt-gtag": "^0.5.7",
     "pinia": "^2.0.35",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
