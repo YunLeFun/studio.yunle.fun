@@ -4,4 +4,8 @@ export interface Project {
   icon: string
   url: string
   github?: string
+  /**
+   * Bilibili 站内链接
+   */
+  bilibili?: string
 }

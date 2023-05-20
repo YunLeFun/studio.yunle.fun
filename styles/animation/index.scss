@@ -15,11 +15,11 @@
 .bg-left-to-right {
   background: linear-gradient(to right, var(--c-text) 50%, var(--c-bg) 50%);
   background-blend-mode: difference;
-  background-size: 200% 100%;
-  background-position: right bottom;
+  background-size: 200% 200%;
+  background-position: right;
   transition: all .4s ease-in-out;
 
   &:hover {
-    background-position: left bottom;
+    background-position: left;
   }
 }

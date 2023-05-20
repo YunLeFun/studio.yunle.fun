@@ -5,7 +5,7 @@ import { confirmFormUrl, groups, members, socialList } from '~/config'
 <template>
   <div>
     <div border="$c-text" border-8px max-w-600px shadow m-auto p-2>
-      <h3 text="lg" font="serif black" mb-2>
+      <h3 class="ylf-font-serif" text="lg" font="black" mb-2>
         商务合作
       </h3>
       <div m-auto>
@@ -35,7 +35,7 @@ import { confirmFormUrl, groups, members, socialList } from '~/config'
 
       <details>
         <summary cursor="pointer">
-          <span text="lg" font="serif black" my-2>
+          <span class="ylf-font-serif" text="lg" font="black" my-2>
             微信交流群
           </span>
         </summary>

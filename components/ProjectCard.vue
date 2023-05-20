@@ -28,5 +28,20 @@ defineProps<{
     <div text="sm" mt-2 opacity="80">
       {{ project.desc }}
     </div>
+    <div mt="2" class="flex-center">
+      <a
+        v-if="project.url" :href="project.url" target="_blank"
+        p="2"
+      >
+        <div i-ri-global-line />
+      </a>
+
+      <a
+        v-if="project.bilibili" :href="project.bilibili" target="_blank"
+        p="2" border="rounded-full"
+      >
+        <div i-ri-bilibili-line />
+      </a>
+    </div>
   </a>
 </template>
