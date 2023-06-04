@@ -14,7 +14,7 @@ const navItems = [
       <li
         v-for="nav in navItems"
         :key="nav.path"
-        class="ylf-menu-item inline-flex text-5xl my-4 py-2 tracking-widest transition"
+        class="ylf-menu-item my-4 inline-flex py-2 text-5xl tracking-widest transition"
       >
         <NuxtLink active-class="active" :to="nav.path">
           {{ nav.name }}

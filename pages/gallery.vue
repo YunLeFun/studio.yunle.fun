@@ -4,7 +4,7 @@ import { projects } from '~/config'
 
 <template>
   <div text-5xl>
-    <ul my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+    <ul grid grid-cols-1 my-4 gap-4 lg:grid-cols-3 md:grid-cols-2>
       <li v-for="project in projects.reverse()" :key="project.name" text-xl>
         <ProjectCard :project="project" />
       </li>

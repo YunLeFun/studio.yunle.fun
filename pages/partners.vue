@@ -10,7 +10,7 @@ import { partners } from '~/config'
     <ul flex justify="center">
       <li
         v-for="partner in partners" :key="partner.name" m-2
-        class="inline-flex drop-shadow hover:drop-shadow-md transition"
+        class="inline-flex drop-shadow transition hover:drop-shadow-md"
       >
         <a :href="partner.url" target="_blank" :title="partner.name">
           <img class="h-16" :src="partner.logo" :alt="partner.name">

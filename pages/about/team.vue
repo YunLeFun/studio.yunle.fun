@@ -4,11 +4,11 @@ import { members } from '~/config'
 
 <template>
   <div text-2xl>
-    <div grid grid-cols-1 md:grid-cols-3 gap-4>
+    <div grid grid-cols-1 gap-4 md:grid-cols-3>
       <MemberCard v-for="member in members" :key="member.name" :member="member" />
     </div>
 
-    <div text-5xl my-4>
+    <div my-4 text-5xl>
       施工中...
     </div>
   </div>

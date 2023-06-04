@@ -7,17 +7,14 @@ const icp = '京ICP备2022027075号-1'
 <template>
   <footer
     class="footer"
-    bg-black
+
     text="xl gray4"
-    p-8
-    flex
-    flex-col
-    justify-start
-    items-start
+
+    flex flex-col items-start justify-start bg-black p-8
   >
     <SocialIcons text="white" :social-list="socialList" />
 
-    <div class="mt-5 text-center opacity-90 text-lg" text-white font-black>
+    <div class="mt-5 text-center text-lg opacity-90" font-black text-white>
       <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
         {{ icp }}
       </a>

@@ -17,7 +17,7 @@ import { intro } from '~/config'
     </div>
     <div class="ylf-font-serif" text="xl bold" mt-4>
       <span>期待与您合作创作更多有趣的产品，让世界变得更加</span>
-      <span font="bold" class="ylf-font-serif bg-clip-text text-fill-transparent bg-gradient-to-r from-blue-600 to-green-600">有趣多彩</span>。
+      <span font="bold" class="ylf-font-serif text-fill-transparent from-blue-600 to-green-600 bg-gradient-to-r bg-clip-text">有趣多彩</span>。
       <NuxtLink class="underline" to="/contact">
         联系我们
       </NuxtLink>
