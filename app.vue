@@ -5,16 +5,22 @@ useHead({
   title: appConfig.title,
   link: [
     {
-      rel: 'icon', type: 'image/png', href: 'https://www.yunyoujun.cn/favicon.svg',
+      rel: 'icon',
+      type: 'image/png',
+      href: 'https://www.yunyoujun.cn/favicon.svg',
     },
     {
-      rel: 'preconnect', href: 'https://fonts.googleapis.com',
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com',
     },
     {
-      rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous',
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: 'anonymous',
     },
     {
-      rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap',
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap',
     },
   ],
 })
@@ -28,7 +34,9 @@ useHead({
 </template>
 
 <style>
-html, body , #__nuxt{
+html,
+body,
+#__nuxt {
   color: var(--c-text);
   background: var(--c-bg);
   background-attachment: fixed;

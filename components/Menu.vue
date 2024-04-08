@@ -39,7 +39,7 @@ const navItems = [
     margin-left: -16px;
 
     &:hover,
-    &.active{
+    &.active {
       font-weight: bold;
       border-left: 8px solid var(--c-border);
     }

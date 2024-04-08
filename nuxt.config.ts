@@ -1,6 +1,56 @@
 import { appDescription } from './constants'
 
 export default defineNuxtConfig({
+
+  modules: [
+    '@unocss/nuxt',
+    '@nuxt/content',
+    '@nuxt/eslint',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode',
+
+    // https://nuxt.com/modules/gtag
+    'nuxt-gtag',
+    '@vite-pwa/nuxt',
+  ],
+
+  experimental: {
+    // when using generate, payload js assets included in sw precache manifest
+    // but missing on offline, disabling extraction it until fixed
+    payloadExtraction: false,
+    renderJsonPayloads: true,
+    typedPages: true,
+  },
+
+  plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
+
+  gtag: {
+    id: 'G-J37CFPQKF4',
+  },
+
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/styles/index.scss',
+  ],
+
+  colorMode: {
+    classSuffix: '',
+  },
+
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+      ignore: ['/hi'],
+    },
+  },
+
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -19,45 +69,19 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'page', mode: 'out-in' },
   },
-  modules: [
-    '@nuxt/content',
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/color-mode',
 
-    // https://nuxt.com/modules/gtag
-    'nuxt-gtag',
-    '@vite-pwa/nuxt',
-  ],
-
-  experimental: {
-    // when using generate, payload js assets included in sw precache manifest
-    // but missing on offline, disabling extraction it until fixed
-    payloadExtraction: false,
-    inlineSSRStyles: false,
-    renderJsonPayloads: true,
+  devtools: {
+    enabled: true,
   },
 
-  plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
-
-  gtag: {
-    id: 'G-J37CFPQKF4',
+  features: {
+    // For UnoCSS
+    inlineStyles: false,
   },
 
-  unocss: {
-    preflight: true,
-  },
-  colorMode: {
-    classSuffix: '',
-  },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/styles/index.scss" as *;',
-        },
-      },
+  eslint: {
+    config: {
+      standalone: false,
     },
   },
 })
