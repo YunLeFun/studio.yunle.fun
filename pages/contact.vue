@@ -19,7 +19,7 @@ import { confirmFormUrl, groups, members, socialList } from '~/config'
       <hr my-2>
 
       <div flex flex-col>
-        <img w="90%" m-auto mt-2 max-w-500px border rounded-3 shadow src="/images/yunlefun-wechat.jpg" alt="云乐坊客户群">
+        <img w="90%" m-auto mt-2 max-w-500px border rounded-3 shadow src="/images/yunlefun-wechat.webp" alt="云乐坊客户群">
         <span mt-1 text="xs" opacity="70">
           了解更多动态
         </span>

@@ -19,7 +19,7 @@ export const socialList: SocialItem[] = [
   {
     icon: 'i-ri-wechat-fill',
     title: '云乐坊工作室｜微信公众号',
-    link: '/images/yunlefun-wechat.jpg',
+    link: '/images/yunlefun-wechat.webp',
   },
   {
     icon: 'i-ri-bilibili-fill',
