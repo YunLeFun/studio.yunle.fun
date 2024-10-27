@@ -1,4 +1,4 @@
-import { appDescription } from './constants'
+import { appDescription } from './app/constants'
 
 export default defineNuxtConfig({
 
@@ -15,14 +15,6 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
   ],
 
-  experimental: {
-    // when using generate, payload js assets included in sw precache manifest
-    // but missing on offline, disabling extraction it until fixed
-    payloadExtraction: false,
-    renderJsonPayloads: true,
-    typedPages: true,
-  },
-
   plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
 
   gtag: {
@@ -37,6 +29,20 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  experimental: {
+    // when using generate, payload js assets included in sw precache manifest
+    // but missing on offline, disabling extraction it until fixed
+    payloadExtraction: false,
+    renderJsonPayloads: true,
+    typedPages: true,
+  },
+
+  compatibilityDate: '2024-08-14',
 
   nitro: {
     esbuild: {
@@ -73,14 +79,19 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  features: {
-    // For UnoCSS
-    inlineStyles: false,
-  },
-
   eslint: {
     config: {
       standalone: false,
+    },
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
     },
   },
 })

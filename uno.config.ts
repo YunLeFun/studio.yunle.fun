@@ -7,7 +7,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import { members, projects, socialList } from './config'
+import { members, projects, socialList } from './app/config'
 
 const projectIcon = projects.map(p => p.icon).filter(i => i.startsWith('i-'))
 const socialIcons = socialList.map(item => item.icon).filter(i => i.startsWith('i-'))
