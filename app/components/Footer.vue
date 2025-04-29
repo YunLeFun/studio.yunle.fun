@@ -12,7 +12,7 @@ import { info, socialList } from '~/config'
   >
     <SocialIcons text="white" :social-list="socialList" />
 
-    <div class="mt-5 text-center text-lg opacity-90" font-black text-white>
+    <div class="mt-5 text-center text-lg opacity-90" text-white font-black>
       <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
         {{ info.icp }}
       </a>
